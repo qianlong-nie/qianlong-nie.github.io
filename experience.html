@@ -1,0 +1,25 @@
+---
+layout: default
+title: { zh: 经历, en: Experience }
+nav_id: experience
+permalink: /experience/
+---
+
+<div class="mt-3"></div>
+{% for item in site.data.experience %}
+<div class="card border-0 shadow-sm bg-white mb-3">
+    <div class="card-body p-4">
+        <div class="d-flex flex-wrap">
+            <h4 class="mb-1">{% include t.html v=item.title %}</h4>
+            <div class="ml-auto no-break"><em>{% include t.html v=item.date %}</em></div>
+        </div>
+        <div>{% include t.html v=item.org %}</div>
+        <div class="small text-muted mb-2">{% include t.html v=item.role %}</div>
+        <ul class="small pl-3 mb-0">
+            {% for point in item.points %}
+            <li>{% include t.html v=point %}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endfor %}

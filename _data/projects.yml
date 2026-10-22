@@ -1,0 +1,17 @@
+- title: { zh: 一种定制水稻种子萌发标准的方法（专利）, en: "A Method for Customizing Rice Seed Germination Standards (Patent)" }
+  date: { zh: 2023 年 12 月 – 2024 年 9 月, en: Dec. 2023 – Sep. 2024 }
+  note: { zh: 导师项目，个人独立完成其中一个板块, en: Advisor's project; I independently completed one module }
+  tags: [Python, Linux, YOLO, SAM]
+  link: https://github.com/WjNql/Seed_Ruler
+  points:
+  - { zh: 使用 YOLO 及 SAM 模型进行种子定位及精细分割, en: Used YOLO and SAM to locate and finely segment seeds }
+  - { zh: 使用 RGB 阈值分割定位萌发芽尖, en: Located germinated sprout tips by RGB threshold segmentation }
+  - { zh: 批量运行并导出芽尖面积大小，以评估水稻种子萌发力, en: Batch-processed images and exported sprout-tip areas to assess seed germination vigor }
+- title: { zh: 《动手学深度学习》学习笔记, en: Dive into Deep Learning Study Notes }
+  date: { zh: 进行中, en: Ongoing }
+  note: { zh: 记录环境搭建与学习过程, en: Environment setup and learning log }
+  tags: [PyTorch, Jupyter, Cloudflare Tunnel]
+  link: https://jizhe-nie.github.io
+  points:
+  - { zh: 在 Mac 与实验室 GPU 服务器上分别搭建学习环境, en: Set up the learning environment on a Mac and on a lab GPU server }
+  - { zh: 通过 Cloudflare Tunnel + SSH 远程使用内网 GPU, en: Reach the intranet GPU remotely through Cloudflare Tunnel and SSH }

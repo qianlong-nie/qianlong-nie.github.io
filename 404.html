@@ -1,0 +1,7 @@
+---
+layout: default
+title: { zh: 页面不存在, en: Page Not Found }
+---
+<h1 class="mt-5 pt-5">404</h1>
+<p class="lead">{% include t.html v=site.data.profile.name %} · {% include t.html v=page.title %}</p>
+<p><a href="{{ '/' | relative_url }}">{% include t.html v=site.data.footer.home %}</a></p>

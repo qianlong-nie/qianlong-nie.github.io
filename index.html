@@ -1,0 +1,111 @@
+---
+layout: default
+title: { zh: 首页, en: Home }
+nav_id: home
+---
+
+<div class="row">
+    <!-- 左侧：个人卡片 -->
+    <div class="col-lg-3 col-md-4">
+        <div class="row sticky-top" style="top: 80px">
+            <div class="col">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body px-4 pt-4 pb-3 text-center">
+                        <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle mb-3" style="max-width: 60%;" alt="Portrait">
+                        <div class="h4">{% include t.html v=site.data.profile.name %}</div>
+                        <div class="small">
+                            {% for position in site.data.profile.positions %}
+                            {% include t.html v=position %}<br/>
+                            {% endfor %}
+                        </div>
+                        <div class="small mt-2">
+                            <a class="email-text" href="mailto:{{ site.data.profile.email | encode_email }}">{{ site.data.profile.email | replace: "@", "(at)" }}</a>
+                        </div>
+                        <div class="h4 pt-2 mb-0">
+                            <a class="px-1 no-break" target="_blank" rel="noopener" href="https://github.com/{{ site.data.profile.github }}" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a class="px-1 no-break" target="_blank" rel="noopener" href="{{ site.data.profile.blog }}" title="Blog"><i class="fas fa-blog"></i></a>
+                            {% if site.data.profile.cv_link %}
+                            <a class="px-1 no-break" target="_blank" href="{{ site.data.profile.cv_link | relative_url }}" title="CV"><i class="fas fa-file-lines"></i></a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧：正文 -->
+    <div class="col-lg-9 col-md-8">
+        <div class="mt-3 d-md-none"></div>
+
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <h3 class="mb-3">{% include t.html v=site.data.ui.about %}</h3>
+                {% include t.html v=site.data.profile.bio tag="div" %}
+            </div>
+        </div>
+
+        <div class="card border-0 shadow-sm bg-white mt-3">
+            <div class="card-body p-4">
+                <h3 class="mb-3">{% include t.html v=site.data.ui.research %}</h3>
+                <div class="row">
+                    {% for item in site.data.profile.research %}
+                    <div class="col-lg-6 mb-3 research-item">
+                        <div class="media">
+                            <i class="fas {{ item.icon }} research-icon mt-1 mr-2"></i>
+                            <div class="media-body">
+                                <div><strong>{% include t.html v=item.name %}</strong></div>
+                                <div class="small text-muted">{% include t.html v=item.desc %}</div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="card border-0 shadow-sm bg-white mt-3">
+            <div class="card-body p-4">
+                <h3 class="mb-3">{% include t.html v=site.data.ui.education %}</h3>
+                <ul class="list-unstyled mb-0">
+                    {% for item in site.data.profile.education %}
+                    <li class="mb-2">
+                        <div class="d-flex">
+                            <div><strong>{% include t.html v=item.name %}</strong></div>
+                            <div class="ml-auto no-break"><em>{% include t.html v=item.date %}</em></div>
+                        </div>
+                        <div class="small">{% include t.html v=item.position %}</div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="card border-0 shadow-sm bg-white mt-3">
+            <div class="card-body p-4">
+                <h3 class="mb-3">{% include t.html v=site.data.ui.awards %}</h3>
+                <ul class="list small pl-3 mb-0">
+                    {% for item in site.data.profile.awards %}
+                    <li class="mb-1">
+                        <div class="d-flex">
+                            <div>{% include t.html v=item.name %}</div>
+                            <div class="ml-auto pl-2 no-break"><em>{% include t.html v=item.date %}</em></div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="card border-0 shadow-sm bg-white mt-3">
+            <div class="card-body p-4">
+                <h3 class="mb-3">{% include t.html v=site.data.ui.skills %}</h3>
+                <ul class="list-unstyled small mb-0">
+                    {% for item in site.data.profile.skills %}
+                    <li class="mb-1"><strong>{% include t.html v=item.name %}</strong>: {% include t.html v=item.value %}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

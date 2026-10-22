@@ -1,0 +1,15 @@
+# 站点设置
+title: 聂千龙 Qianlong Nie
+baseurl: "" # 部署在 <用户名>.github.io 根路径，所以为空
+url: "https://qianlong-nie.github.io"
+
+markdown: kramdown
+plugins:
+  - jekyll-email-protect
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE

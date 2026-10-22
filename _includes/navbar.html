@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm">
+    <div class="container-lg">
+        <a class="navbar-brand" href="{{ '/' | relative_url }}"><strong>{% include t.html v=site.data.profile.name %}</strong></a>
+        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-map"></i> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto align-items-sm-center">
+                {% for item in site.data.navigation.pages %}
+                <li class="nav-item {% if item.id == page.nav_id %}active{% endif %}">
+                    {% if item.external %}
+                    <a class="nav-link" href="{{ item.url }}" target="_blank" rel="noopener">{% include t.html v=item.name %} <i class="fas fa-arrow-up-right-from-square small"></i></a>
+                    {% else %}
+                    <a class="nav-link" href="{{ item.url | relative_url }}">{% include t.html v=item.name %}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+                <li class="nav-item ml-sm-2">
+                    <button id="lang-toggle" type="button" class="btn btn-sm btn-outline-secondary" aria-label="切换语言 / Switch language">
+                        <i class="fas fa-language"></i>
+                        <span class="i18n zh">EN</span><span class="i18n en">中文</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

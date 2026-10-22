@@ -1,0 +1,6 @@
+{%- comment -%}
+双语输出。用法：include t.html，参数 v 传入含 zh、en 两个字段的对象；块级内容再加 tag="div"。
+页面根据 html 标签的 data-lang 只显示当前语言（样式见 assets/css/global.css）。
+{%- endcomment -%}
+{%- assign tag = include.tag | default: "span" -%}
+<{{ tag }} lang="zh-CN" class="i18n zh">{{ include.v.zh }}</{{ tag }}><{{ tag }} lang="en" class="i18n en">{{ include.v.en }}</{{ tag }}>

@@ -1,0 +1,66 @@
+# 所有面向读者的文字都写成 { zh: ..., en: ... } 两份，页面里用 {% include t.html v=... %} 输出
+name: { zh: 聂千龙, en: Qianlong Nie }
+
+positions:
+- { zh: 硕士研究生, en: M.S. Student }
+- { zh: 上海师范大学, en: Shanghai Normal University }
+- { zh: 信息与机电工程学院, en: "College of Information, Mechanical and Electrical Engineering" }
+
+email: "jizhe.bob@gmail.com"
+github: jizhe-nie
+blog: https://jizhe-nie.github.io
+# cv_link: /assets/cv/cv.pdf
+
+portrait_url: /assets/images/portrait.png
+
+bio:
+  zh: >-
+    <p>我是上海师范大学信息与机电工程学院计算机科学与技术专业的在读硕士研究生（2025 至今），预计 2028 年 6 月毕业。</p>
+    <p>我的研究兴趣包括<strong>医工交叉</strong>（目前在做心音与心电信号的交叉研究）、<strong>计算机视觉与深度学习</strong>，以及<strong>人工智能赋能教育</strong>。</p>
+    <p>本科期间，我参与了水稻种子萌发检测项目，用 YOLO 与 SAM 完成种子的定位和精细分割；毕业后赴广西百色支教一年，带领学生取得省级编程竞赛一等奖。此前我还曾在武警部队服役两年。</p>
+  en: >-
+    <p>I am a master's student in Computer Science and Technology at the College of Information, Mechanical and Electrical Engineering, Shanghai Normal University (2025 – present), expected to graduate in June 2028.</p>
+    <p>My research interests include <strong>biomedical–engineering crossover</strong> (currently studying heart sound and ECG signals together), <strong>computer vision and deep learning</strong>, and <strong>AI for education</strong>.</p>
+    <p>As an undergraduate I worked on a rice seed germination project, using YOLO and SAM to locate and segment seeds. After graduating I spent a year teaching in Baise, Guangxi, where my students won first prize in a provincial programming competition. I also served for two years in the People's Armed Police.</p>
+
+research:
+- icon: fa-heart-pulse
+  name: { zh: 医工交叉, en: Biomedical Engineering }
+  desc: { zh: 心音与心电信号的交叉研究（进行中）, en: Joint study of heart sound and ECG signals (ongoing) }
+- icon: fa-eye
+  name: { zh: 计算机视觉, en: Computer Vision }
+  desc: { zh: 目标检测与分割，如 YOLO、SAM 在种子萌发检测中的应用, en: "Detection and segmentation, e.g. YOLO and SAM for seed germination assessment" }
+- icon: fa-brain
+  name: { zh: 深度学习, en: Deep Learning }
+  desc: { zh: 系统学习中（《动手学深度学习》），笔记见博客, en: Studying systematically (Dive into Deep Learning); notes on my blog }
+- icon: fa-chalkboard-user
+  name: { zh: AI + 教育, en: AI + Education }
+  desc: { zh: 来自支教与 STEM 教育团队的编程教学实践, en: Programming education practice from teaching service and a STEM education team }
+
+education:
+- name: { zh: 上海师范大学, en: Shanghai Normal University }
+  position: { zh: 硕士，计算机科学与技术（预计 2028 年 6 月毕业）, en: "M.S. in Computer Science and Technology (expected Jun. 2028)" }
+  date: { zh: 2025 – 至今, en: 2025 – present }
+- name: { zh: 上海师范大学, en: Shanghai Normal University }
+  position: { zh: 学士，计算机科学与技术；上海市优秀毕业生, en: "B.S. in Computer Science and Technology; Shanghai Outstanding Graduate" }
+  date: { zh: 2018 – 2024, en: 2018 – 2024 }
+
+skills:
+- name: { zh: 编程语言, en: Languages }
+  value: { zh: Python、C、Scratch, en: "Python, C, Scratch" }
+- name: { zh: 平台, en: Platforms }
+  value: { zh: Windows、Linux, en: "Windows, Linux" }
+- name: { zh: 方向, en: Focus }
+  value: { zh: 计算机视觉, en: Computer vision }
+- name: { zh: 语言, en: Languages (human) }
+  value: { zh: 英语熟练（大学英语六级）, en: "English: proficient (CET-6)" }
+- name: { zh: 证书, en: Certificates }
+  value: { zh: 高中信息技术教师资格证、全国计算机二级（Python）、上海市计算机二级（C）, en: "Senior high school IT teacher qualification; NCRE Level 2 (Python); Shanghai Computer Level 2 (C)" }
+
+awards:
+- name: { zh: 全国大学生志愿服务西部计划“优秀志愿者”, en: "Outstanding Volunteer, National College Student Volunteer Program for Western China" }
+  date: { zh: 2025 年 9 月, en: Sep. 2025 }
+- name: { zh: 上海市优秀毕业生, en: Shanghai Outstanding Graduate }
+  date: { zh: 2024 年 5 月, en: May 2024 }
+- name: { zh: 上海市青年五四奖章集体（人工智能 STEM 教育研究中心青年团队）, en: "Shanghai Youth May Fourth Medal (Collective), AI STEM Education Research Center Youth Team" }
+  date: { zh: 2023 年 4 月, en: Apr. 2023 }

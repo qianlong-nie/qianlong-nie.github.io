@@ -1,0 +1,6 @@
+# 页面里各板块的标题
+about: { zh: 关于我, en: About Me }
+research: { zh: 研究兴趣, en: Research Interests }
+education: { zh: 教育背景, en: Education }
+awards: { zh: 荣誉奖项, en: Honors & Awards }
+skills: { zh: 技能, en: Skills }

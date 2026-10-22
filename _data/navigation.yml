@@ -1,0 +1,15 @@
+# id 要和页面 front matter 里的 nav_id 一致，用来高亮当前页
+pages:
+- id: home
+  url: /
+  name: { zh: 首页, en: Home }
+- id: experience
+  url: /experience/
+  name: { zh: 经历, en: Experience }
+- id: projects
+  url: /projects/
+  name: { zh: 项目, en: Projects }
+- id: blog
+  url: https://jizhe-nie.github.io
+  external: true
+  name: { zh: 博客, en: Blog }
