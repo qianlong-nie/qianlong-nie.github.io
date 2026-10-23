@@ -12,7 +12,7 @@ blog: https://jizhe-nie.github.io
 # 简历 PDF 由 tools/build_cv.sh 生成（不含手机号）
 cv: { zh: /assets/cv/Qianlong-Nie-CV-zh.pdf, en: /assets/cv/Qianlong-Nie-CV-en.pdf }
 
-portrait_url: /assets/images/portrait.png
+portrait_url: /assets/images/portrait.jpg
 
 bio:
   zh: >-
