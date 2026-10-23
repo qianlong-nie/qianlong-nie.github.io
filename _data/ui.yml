@@ -4,3 +4,6 @@ research: { zh: 研究兴趣, en: Research Interests }
 education: { zh: 教育背景, en: Education }
 awards: { zh: 荣誉奖项, en: Honors & Awards }
 skills: { zh: 技能, en: Skills }
+experience: { zh: 经历, en: Experience }
+projects: { zh: 项目, en: Projects }
+cv_download: { zh: 下载简历 PDF, en: Download CV (PDF) }

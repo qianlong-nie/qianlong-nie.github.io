@@ -9,7 +9,8 @@ positions:
 email: "jizhe.bob@gmail.com"
 github: jizhe-nie
 blog: https://jizhe-nie.github.io
-# cv_link: /assets/cv/cv.pdf
+# 简历 PDF 由 tools/build_cv.sh 生成（不含手机号）
+cv: { zh: /assets/cv/Qianlong-Nie-CV-zh.pdf, en: /assets/cv/Qianlong-Nie-CV-en.pdf }
 
 portrait_url: /assets/images/portrait.png
 
@@ -46,13 +47,13 @@ education:
   date: { zh: 2018 – 2024, en: 2018 – 2024 }
 
 skills:
-- name: { zh: 编程语言, en: Languages }
+- name: { zh: 编程语言, en: Programming }
   value: { zh: Python、C、Scratch, en: "Python, C, Scratch" }
 - name: { zh: 平台, en: Platforms }
   value: { zh: Windows、Linux, en: "Windows, Linux" }
 - name: { zh: 方向, en: Focus }
   value: { zh: 计算机视觉, en: Computer vision }
-- name: { zh: 语言, en: Languages (human) }
+- name: { zh: 语言, en: Languages }
   value: { zh: 英语熟练（大学英语六级）, en: "English: proficient (CET-6)" }
 - name: { zh: 证书, en: Certificates }
   value: { zh: 高中信息技术教师资格证、全国计算机二级（Python）、上海市计算机二级（C）, en: "Senior high school IT teacher qualification; NCRE Level 2 (Python); Shanghai Computer Level 2 (C)" }

@@ -24,10 +24,12 @@ nav_id: home
                         <div class="h4 pt-2 mb-0">
                             <a class="px-1 no-break" target="_blank" rel="noopener" href="https://github.com/{{ site.data.profile.github }}" title="GitHub"><i class="fab fa-github"></i></a>
                             <a class="px-1 no-break" target="_blank" rel="noopener" href="{{ site.data.profile.blog }}" title="Blog"><i class="fas fa-blog"></i></a>
-                            {% if site.data.profile.cv_link %}
-                            <a class="px-1 no-break" target="_blank" href="{{ site.data.profile.cv_link | relative_url }}" title="CV"><i class="fas fa-file-lines"></i></a>
-                            {% endif %}
                         </div>
+                        {% if site.data.profile.cv %}
+                        <!-- 按当前语言只显示对应语言的简历按钮 -->
+                        <a class="btn btn-sm btn-outline-primary mt-3 i18n zh" lang="zh-CN" target="_blank" rel="noopener" href="{{ site.data.profile.cv.zh | relative_url }}"><i class="fas fa-file-pdf"></i> {{ site.data.ui.cv_download.zh }}</a>
+                        <a class="btn btn-sm btn-outline-primary mt-3 i18n en" lang="en" target="_blank" rel="noopener" href="{{ site.data.profile.cv.en | relative_url }}"><i class="fas fa-file-pdf"></i> {{ site.data.ui.cv_download.en }}</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
